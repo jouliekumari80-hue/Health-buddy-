@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analyze</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="dashboard.html">⬅ Back</a>
+</nav>
+
+<div class="container">
+
+<h2>Analyze Health</h2>
+
+<input id="steps" type="number" min="0" placeholder="Steps">
+<input id="water" type="number" min="0" placeholder="Water (L)">
+<input id="screen" type="number" min="0" placeholder="Screen Time">
+<input id="exercise" type="number" min="0" placeholder="Exercise">
+
+<button onclick="analyze()">Analyze</button>
+
+<p id="error" class="error"></p>
+
+<h3 id="score"></h3>
+
+<div class="progress-bar">
+<div id="progress"></div>
+</div>
+
+<div id="aiTips"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

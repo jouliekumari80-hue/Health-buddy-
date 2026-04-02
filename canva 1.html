@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="center-box">
+    <h2>💙 Health Buddy Login</h2>
+
+    <input id="identifier" placeholder="Email or Mobile">
+    <button onclick="sendOTP()">Send OTP</button>
+
+    <div id="otpSection" style="display:none;">
+        <input id="otpInput" placeholder="Enter OTP">
+        <button onclick="verifyOTP()">Login</button>
+    </div>
+
+    <p id="otpDisplay"></p>
+    <p id="authError" class="error"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

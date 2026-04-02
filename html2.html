@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Health Buddy</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>💙 Health</h2>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('analyze')">Analyze</button>
+    <button onclick="showPage('graph')">Graph</button>
+    <button onclick="showPage('bmi')">BMI</button>
+    <button onclick="showPage('nutrition')">Nutrition</button>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<!-- HOME -->
+<div id="home" class="page">
+    <h1>Welcome 👋</h1>
+    <p>Select feature from sidebar</p>
+</div>
+
+<!-- ANALYZE -->
+<div id="analyze" class="page">
+    <h2>Analyze Health</h2>
+
+    <input id="steps" type="number" min="0" placeholder="Steps">
+    <input id="water" type="number" min="0" placeholder="Water (L)">
+    <input id="screen" type="number" min="0" placeholder="Screen Time">
+    <input id="exercise" type="number" min="0" placeholder="Exercise">
+
+    <button onclick="analyze()">Analyze</button>
+
+    <p id="error" class="error"></p>
+
+    <h3 id="score"></h3>
+
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <div id="aiTips"></div>
+</div>
+
+<!-- GRAPH -->
+<div id="graph" class="page">
+    <h2>Weekly Graph</h2>
+    <canvas id="chart"></canvas>
+</div>
+
+<!-- BMI -->
+<div id="bmi" class="page">
+    <h2>BMI Calculator</h2>
+
+    <input id="height" type="number" min="0" placeholder="Height (cm)">
+    <input id="weight" type="number" min="0" placeholder="Weight (kg)">
+
+    <button onclick="calculateBMI()">Calculate</button>
+
+    <p id="bmiResult"></p>
+</div>
+
+<!-- NUTRITION -->
+<div id="nutrition" class="page">
+    <h2>Nutrition Tips</h2>
+
+    <button onclick="showNutrition()">Show Tips</button>
+
+    <p id="nutritionTips"></p>
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

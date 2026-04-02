@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* LOGIN */
+.center-box {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* APP LAYOUT */
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background: #1e3a8a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar button {
+    margin: 8px 0;
+    padding: 10px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* PAGE */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* INPUT */
+input {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    width: 250px;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 15px;
+    margin-top: 5px;
+}
+
+/* PROGRESS */
+.progress-bar {
+    width: 250px;
+    height: 10px;
+    background: #334155;
+}
+
+#progress {
+    height: 100%;
+    background: #22c55e;
+    width: 0%;
+}
+
+.error {
+    color: red;
+}
